@@ -1,0 +1,12 @@
+name: Polyglot Example
+description: An example plugin for showing multiple polyglot hooks
+author: https://github.com/tomowatt
+requirements:
+  - bash
+  - nodejs
+  - perl
+  - python3
+  - ruby
+configuration:
+  properties: {}
+  additionalProperties: false
