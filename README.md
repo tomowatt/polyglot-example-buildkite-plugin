@@ -17,7 +17,7 @@ The plugin requires the following tools to be installed on the agent:
 ```yaml
 steps:
   - plugins:
-    - tomowatt/polyglot-example#~: ~
+    - tomowatt/polyglot-example: ~
 ```
 
 ## License
