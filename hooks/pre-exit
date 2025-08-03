@@ -1,0 +1,4 @@
+#!/usr/bin/env perl
+
+print "Hello from Perl!\n";
+print "Perl version: $^V\n";

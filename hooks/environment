@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+echo "Hello from Bash!"
+echo "Bash version: $BASH_VERSION"
