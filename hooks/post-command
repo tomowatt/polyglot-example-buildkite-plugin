@@ -1,4 +1,11 @@
 #!/usr/bin/env node
 
-console.log("Hello from Node!");
-console.log("Node version: ", process.version);
+// Add the lib directory to the Node load path
+const path = require('path');
+const { helloNode } = require(path.join(__dirname, '../lib/post-command'));
+
+function main() {
+    helloNode();
+}
+
+main();

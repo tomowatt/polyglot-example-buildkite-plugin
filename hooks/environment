@@ -1,4 +1,15 @@
 #!/usr/bin/env bash
 
-echo "Hello from Bash!"
-echo "Bash version: $BASH_VERSION"
+set -euo pipefail
+
+# Add the lib directory to the Bash load path
+DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
+
+# shellcheck source=lib/environment.bash
+. "$DIR/../lib/environment.bash"
+
+function main() {
+    hello_bash
+}
+
+main
