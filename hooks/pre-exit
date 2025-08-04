@@ -1,4 +1,17 @@
 #!/usr/bin/env perl
 
-print "Hello from Perl!\n";
-print "Perl version: $^V\n";
+use strict;
+use warnings;
+use File::Basename;
+use File::Spec;
+
+# Add the lib directory to the Perl load path
+use lib File::Spec->catdir(dirname(__FILE__), '..', 'lib');
+
+require 'pre-exit.pl';
+
+sub main {
+    hello_perl();
+}
+
+main();

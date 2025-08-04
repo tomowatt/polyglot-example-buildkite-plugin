@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
 import sys
+import os
 
-print("Hello from Python!")
-print("Python version: ", sys.version)
+# Add the lib directory to the Python load path
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'lib'))
+
+from pre_command import hello_python
+
+def main():
+    hello_python()
+
+main()
